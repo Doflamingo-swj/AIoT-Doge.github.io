@@ -1,20 +1,16 @@
 ---
 layout: page
-title: About
+title: 关于
 permalink: /about/
 ---
 
-#### Tagline
+#### Introduction
 
 Your tagline.
 
-#### Introduction
+#### Member
 
 Introduce yourself.
-
-#### This theme
-
-This [jekyll](https://jekyllrb.com) theme is based on [materialize](http://materializecss.com). For more detail, you can view the github repo: [mumuxme/materialize-jekyll](https://github.com/mumuxme/materialize-jekyll)
 
 
 #### License
@@ -29,6 +25,6 @@ As for all articles(except reference) are under [CC Attribution-ShareAlike 4.0 I
 
 - - -
 
-#### Personal information
+#### Member information
 
-Email: {{ site.email }}
+YUZ's Email: {{ site.email_yuz }}
