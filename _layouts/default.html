@@ -9,6 +9,7 @@
       <nav class="nav-extended {{ site.header-color }}">
         {% include navbar.html %}
 
+<!--不需要tab>
         <div class="nav-content">
           <ul class="tabs tabs-transparent">
             <li class="tab"><a class="active" href="#tab-main">main</a></li>
@@ -17,21 +18,22 @@
           {% endfor %}
           </ul>
         </div>
+<!-->
       </nav>
     </header>
 
+<!--不需要tab>
   {% for t in site.data.tabs %}
     <div id="{{ t.id }}">
       {% include {{ t.fp }} %}
     </div>
   {% endfor %}
-
+<-->
     <div class="site-container" id="tab-main"> 
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
-
     {% include footer.html %}
 
     <!-- scrolltop button -->
