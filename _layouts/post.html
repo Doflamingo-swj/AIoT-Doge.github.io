@@ -36,7 +36,7 @@ layout: default
     <article class="post-content">
       {{ content | toc_generate }}
     </article>
-
+    
     {% include share.html %}
 
   </div>
@@ -46,8 +46,10 @@ layout: default
     {% include mathjax_support.html %}
   {% endif %}
 
-  <div class="post-content">
-    {% include comment.html %}  
-  <div>
+  {% if page.comment %}
+    <div class="post-content">
+      {% include comment.html %}  
+    <div>
+  {% endif %}
 
 </div>
