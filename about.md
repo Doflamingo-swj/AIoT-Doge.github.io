@@ -4,16 +4,18 @@ title: 关于
 permalink: /about/
 ---
 
-#### Introduction
-
-Your tagline.
-
-#### Member
-
-Introduce yourself.
+#### 介绍
 
 
-#### License
+
+#### 成员
+
+**yuz:**
++ 教育经历：电子科技大学
++ 研究方向：计算机体系结构(RISC-V)
++ Email：{{ site.email_yuz }}
+
+#### 证书
 
 Copyright&nbsp;&copy;&nbsp;{{ site.author }}
 
@@ -25,6 +27,6 @@ As for all articles(except reference) are under [CC Attribution-ShareAlike 4.0 I
 
 - - -
 
-#### Member information
+#### 成员信息
 
 YUZ's Email: {{ site.email_yuz }}
