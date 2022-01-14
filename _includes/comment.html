@@ -1,7 +1,4 @@
-<!--
-Disqus for this site is disabled.
-TODO: remove
--->
+<!--disqus已死>
 
 <div class="card-panel z-depth-2">
   <div id="disqus_thread"></div>
@@ -27,3 +24,22 @@ TODO: remove
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 </div>
+<-->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+<script data-no-instant type="text/javascript">
+    const gitalk = new Gitalk({
+      clientID: '{{ site.comments.gitalk.clientID }}',
+      clientSecret: '{{ site.comments.gitalk.clientSecret }}',
+      repo: '{{ site.comments.gitalk.repo }}',
+      owner: '{{ site.comments.gitalk.owner }}',
+      admin: ['{{ site.comments.gitalk.admin }}'],
+      id: location.pathname,      // Ensure uniqueness and length less than 50
+      distractionFreeMode: true  // Facebook-like distraction free mode
+    })
+    
+gitalk.render('gitalk-container')
+</script>

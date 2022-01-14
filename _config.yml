@@ -65,3 +65,11 @@ share-button-small-color: ""
 ##
 #excerpt_separator: <!-- excerpt_end -->       # for post.excerpt
 
+# Comments
+comments :
+  gitalk :
+    clientID : 92cde654f0b654b95641
+    clientSecret : 5df20c8583f9edf7fd02ef34f62a00d75a7d0fe4
+    repo : AIoT-Doge.github.io
+    owner : AIoT-Doge
+    admin : yuzdoge
