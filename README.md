@@ -63,8 +63,6 @@ make run
 You can use GitHub-flavored emoji. See [emoji cheat sheet](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
 #### TODO
-
-- Add comment. (???)
 - Add options to choose self host or cdn.
 
 
