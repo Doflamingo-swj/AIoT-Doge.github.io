@@ -29,7 +29,8 @@ permalink: /category/
           {% for post in site.categories[cate] %}{% if post.title != null %}
           <ul>
             <li>
-              {{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;>>&nbsp;&nbsp;<a class="category-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              {{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;>>&nbsp;&nbsp;<a class="category-link" href="{{ post.url | prepend: site.baseurl }}">
+                {% if post.tags[0] %}[&nbsp;{% for ptag in post.tags %}{{ ptag }};&nbsp;{% endfor %}]{% else %}[&nbsp;unkown;&nbsp;]{% endif %}&nbsp;{{ post.title }}</a>
             </li>
           </ul>
           {% endif %}{% endfor %}
